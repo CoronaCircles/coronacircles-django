@@ -1,3 +1,6 @@
 *.db
 *.sql
 *.pyc
+*.map
+
+/static/
