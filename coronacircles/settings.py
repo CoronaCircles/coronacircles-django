@@ -189,8 +189,13 @@ INSTALLED_APPS = [
     'djangocms_snippet',
     'djangocms_googlemap',
     'djangocms_video',
-    'coronacircles'
+    'coronacircles',
+    'schedule'
 ]
+
+TEMPLATE_CONTEXT_PROCESSORS = {
+    'django.template.context_processors.request'
+}
 
 LANGUAGES = (
     ## Customize this
