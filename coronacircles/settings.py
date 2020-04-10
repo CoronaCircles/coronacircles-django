@@ -231,6 +231,8 @@ CMS_LANGUAGES = {
 CMS_TEMPLATES = (
     ## Customize this
     ('fullwidth.html', 'Fullwidth'),
+    ('start.html', 'Start'),
+    ('fullcalendar.html', 'Fullcalendar'),
     ('sidebar_left.html', 'Sidebar Left'),
     ('sidebar_right.html', 'Sidebar Right')
 )
