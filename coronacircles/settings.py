@@ -200,6 +200,7 @@ TEMPLATE_CONTEXT_PROCESSORS = {
 LANGUAGES = (
     ## Customize this
     ('de', gettext('de')),
+    ('en', gettext('en')),
 )
 
 CMS_LANGUAGES = {
@@ -208,6 +209,13 @@ CMS_LANGUAGES = {
         {
             'code': 'de',
             'name': gettext('de'),
+            'redirect_on_fallback': True,
+            'public': True,
+            'hide_untranslated': False,
+        },
+        {
+            'code': 'en',
+            'name': gettext('en'),
             'redirect_on_fallback': True,
             'public': True,
             'hide_untranslated': False,
