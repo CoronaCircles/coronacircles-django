@@ -22,6 +22,7 @@ This project also is written in Python 3.7, so don't expect it to work with othe
     - name/title
     - participants (user ID's as csv)
     - description
+
 visualized: https://dbdiagram.io/d/5e905d1c39d18f5553fd673f
 
 
