@@ -10,6 +10,8 @@ from django.contrib.sitemaps.views import sitemap
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.views.static import serve
 
+from django.views.generic import TemplateView
+
 admin.autodiscover()
 
 urlpatterns = [
@@ -19,6 +21,8 @@ urlpatterns = [
 
 urlpatterns += i18n_patterns(
     url(r'^admin/', admin.site.urls),  # NOQA
+    url(r'^schedule/', include('schedule.urls')),
+    url(r'^fullcalendar/', TemplateView.as_view(template_name="fullcalendar.html"), name='Fullcalendar'),
     url(r'^', include('cms.urls')),
 )
 
