@@ -2,8 +2,12 @@
 <!doctype html>
 <html lang="{{ LANGUAGE_CODE }}">
     <head>
-        <title>{% block title %}This is my new project home page{% endblock title %}</title>
+        <meta charset="utf-8">
+        <meta name="description" content="{% page_attribute 'meta_description' %}"> 
         <meta name="viewport" content="width=device-width,initial-scale=1">
+
+        <title>{% block title %}{% endblock title %} - Corona Circles</title>
+
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <style type="text/css">
             .nav {
