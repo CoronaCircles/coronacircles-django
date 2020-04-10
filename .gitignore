@@ -2,5 +2,5 @@
 *.sql
 *.pyc
 *.map
-
+*.DS_Store
 /static/
