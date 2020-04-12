@@ -426,6 +426,17 @@ CMS_PLACEHOLDER_CONF = {
     'Testimonial 6 Author': {
         'plugins': ['TextPlugin'],
     },
+    'Contact': {
+        'plugins': ['TextPlugin'],
+        'default_plugins': [
+            {
+                'plugin_type': 'TextPlugin',
+                'values': {
+                    'body':'<h1>Contact</h1><p><a href="mailto:contact@coronacircles.net">Contact</a> the CoronaCircle Team</br>Share your experiences, questions, and ideas with us!</p>',
+                },
+            },
+        ],
+    },
 }
 
 THUMBNAIL_PROCESSORS = (
