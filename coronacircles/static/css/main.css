@@ -140,6 +140,9 @@ ul.navbar-nav li a:hover {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+.carousel.slide .carousel-inner .row {
+  display: table;
+}
 .carousel.slide .carousel-inner .left {
   background-image: url("/static/img/ccircle.png");
   background-repeat: no-repeat;
@@ -148,16 +151,22 @@ ul.navbar-nav li a:hover {
   min-height: 450px;
   padding-top: 40px;
   padding-bottom: 40px;
+  display: table-cell;
+  vertical-align: middle;
+  height: 600px;
 }
 .carousel.slide .carousel-inner .left h1 {
-  font-size: 130px;
-  margin-top: 100px;
+  font-size: 64px;
   text-align: center;
+  text-transform: uppercase;
 }
 .carousel.slide .carousel-inner .right {
   min-height: 450px;
   padding-top: 40px;
   padding-bottom: 40px;
+  display: table-cell;
+  vertical-align: middle;
+  height: 600px;
 }
 
 /* Event List */
@@ -346,6 +355,32 @@ footer {
 footer p {
   vertical-align: middle;
   display: inline;
+}
+
+/* Testimonials */
+.testimonials h1 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+.testimonials .author {
+  font-weight: bold;
+  display: block;
+}
+.testimonials li.media {
+  font-size: 14px;
+  border-bottom: 1px solid #502900;
+  padding-bottom: 20px;
+  height: 150px;
+  overflow: hidden;
+  color: #502900;
+}
+.testimonials li.media .media-body p {
+  margin-bottom: 0px;
+}
+.testimonials img {
+  border-radius: 30px;
+  height: 60px;
 }
 
 /* Responsive */

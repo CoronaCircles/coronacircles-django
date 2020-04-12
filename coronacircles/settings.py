@@ -239,7 +239,194 @@ CMS_TEMPLATES = (
 
 CMS_PERMISSION = True
 
-CMS_PLACEHOLDER_CONF = {}
+CMS_PLACEHOLDER_CONF = {
+    'First Slide Headline': {
+        'plugins': ['TextPlugin'],
+        'default_plugins': [
+            {
+                'plugin_type': 'TextPlugin',
+                'values': {
+                    'body':'<h1>Why?</h1>',
+                },
+            },
+        ],
+    },
+    'First Slide Text': {
+        'plugins': ['TextPlugin'],
+        'default_plugins': [
+            {
+                'plugin_type': 'TextPlugin',
+                'values': {
+                    'body':'<p>In times of social distancing we meet online to create encounters, where we listen to what touches us deeply.<br />To do this, we combine the powerful tradition of the circle work with the current possibilities of video conferencing.</p><p>Since the beginning of time, people have been coming together in circles to share about themselves and their concerns.<br />Let us use this online tool to get out of our isolation and experience online circles, in which we feel seen and heard.</p>',
+                },
+            },
+        ],
+    },
+    'Second Slide Headline': {
+        'plugins': ['TextPlugin'],
+        'default_plugins': [
+            {
+                'plugin_type': 'TextPlugin',
+                'values': {
+                    'body':'<h1>How do you find one Another?</h1>',
+                },
+            },
+        ],
+    },
+    'Second Slide Text': {
+        'plugins': ['TextPlugin'],
+        'default_plugins': [
+            {
+                'plugin_type': 'TextPlugin',
+                'values': {
+                    'body':'<p>On this platform you can join a CoronaCircle or invite others to one. Up to 7 people come together and talk about what moves them and listen to each other carefully.</p><p>Let us form a network of self-organized circles in order to support each other in these extraordinary times!</p>',
+                },
+            },
+        ],
+    },
+    'Third Slide Headline': {
+        'plugins': ['TextPlugin'],
+        'default_plugins': [
+            {
+                'plugin_type': 'TextPlugin',
+                'values': {
+                    'body':'<h1>Flow of A CoronaCycle</h1>',
+                },
+            },
+        ],
+    },
+    'Third Slide Text': {
+        'plugins': ['TextPlugin'],
+        'default_plugins': [
+            {
+                'plugin_type': 'TextPlugin',
+                'values': {
+                    'body':'<p>The CoronaCircle method is simple and effective. It provides a framework that helps to create a respectful and appreciative communication at eye level.</p><ul><li>Welcome</li><li>A moment of silence</li><li>First round: Who and where am I?</li><li>Second round: How am I doing? What do I need? What touches or inspires me?</li><li>Third round: What do I take with me from this CoronaCircle?</li>',
+                },
+            },
+        ],
+    },
+    'Fourth Slide Headline': {
+        'plugins': ['TextPlugin'],
+        'default_plugins': [
+            {
+                'plugin_type': 'TextPlugin',
+                'values': {
+                    'body':'<h1>What is helpful?</h1>',
+                },
+            },
+        ],
+    },
+    'Fourth Slide Text': {
+        'plugins': ['TextPlugin'],
+        'default_plugins': [
+            {
+                'plugin_type': 'TextPlugin',
+                'values': {
+                    'body':'<ul><li>Rejoicing in meeting people</li><li>Listening benevolently and impartially</li><li>Courage to show myself with my own feelings, worries and experiences</li><li>Making sure that I speak about myself when I talk</li><li>Mindful handling of what is shared</li><li>Silence is also a form of sharing</li>',
+                },
+            },
+        ],
+    },
+    'Events Headline': {
+        'plugins': ['TextPlugin'],
+        'default_plugins': [
+            {
+                'plugin_type': 'TextPlugin',
+                'values': {
+                    'body':'<h1>Participate in a corona circle</h1>',
+                },
+            },
+        ],
+    },
+    'show more': {
+        'plugins': ['TextPlugin'],
+        'default_plugins': [
+            {
+                'plugin_type': 'TextPlugin',
+                'values': {
+                    'body':'<h3>Show more Circles:</h3>',
+                },
+            },
+        ],
+    },
+    'Host': {
+        'plugins': ['TextPlugin'],
+        'default_plugins': [
+            {
+                'plugin_type': 'TextPlugin',
+                'values': {
+                    'body':'<h1>Host a CoronaCircle</h1>',
+                },
+            },
+        ],
+    },
+    'Testimonials Headline': {
+        'plugins': ['TextPlugin'],
+        'default_plugins': [
+            {
+                'plugin_type': 'TextPlugin',
+                'values': {
+                    'body':'<h1>Testimonials</h1>',
+                },
+            },
+        ],
+    },
+    'Testimonial 1 Image': {
+        'plugins': ['Bootstrap4PicturePlugin'],
+    },
+    'Testimonial 2 Image': {
+        'plugins': ['Bootstrap4PicturePlugin'],
+    },
+    'Testimonial 3 Image': {
+        'plugins': ['Bootstrap4PicturePlugin'],
+    },
+    'Testimonial 4 Image': {
+        'plugins': ['Bootstrap4PicturePlugin'],
+    },
+    'Testimonial 5 Image': {
+        'plugins': ['Bootstrap4PicturePlugin'],
+    },
+    'Testimonial 6 Image': {
+        'plugins': ['Bootstrap4PicturePlugin'],
+    },
+    'Testimonial 1 Text': {
+        'plugins': ['TextPlugin'],
+    },
+    'Testimonial 2 Text': {
+        'plugins': ['TextPlugin'],
+    },
+    'Testimonial 3 Text': {
+        'plugins': ['TextPlugin'],
+    },
+    'Testimonial 4 Text': {
+        'plugins': ['TextPlugin'],
+    },
+    'Testimonial 5 Text': {
+        'plugins': ['TextPlugin'],
+    },
+    'Testimonial 6 Text': {
+        'plugins': ['TextPlugin'],
+    },
+    'Testimonial 1 Author': {
+        'plugins': ['TextPlugin'],
+    },
+    'Testimonial 2 Author': {
+        'plugins': ['TextPlugin'],
+    },
+    'Testimonial 3 Author': {
+        'plugins': ['TextPlugin'],
+    },
+    'Testimonial 4 Author': {
+        'plugins': ['TextPlugin'],
+    },
+    'Testimonial 5 Author': {
+        'plugins': ['TextPlugin'],
+    },
+    'Testimonial 6 Author': {
+        'plugins': ['TextPlugin'],
+    },
+}
 
 THUMBNAIL_PROCESSORS = (
     'easy_thumbnails.processors.colorspace',
