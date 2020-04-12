@@ -12,6 +12,8 @@ from django.views.static import serve
 
 from django.views.generic import TemplateView
 
+
+
 admin.autodiscover()
 
 urlpatterns = [
@@ -24,6 +26,7 @@ urlpatterns += i18n_patterns(
     url(r'^schedule/', include('schedule.urls')),
     url(r'^fullcalendar/', TemplateView.as_view(template_name="fullcalendar.html"), name='Fullcalendar'),
     url(r'^', include('cms.urls')),
+    url(r'^api/', include('main_app.urls'))
 )
 
 # This is only needed when using runserver.
