@@ -67,6 +67,7 @@ body
 
 h1 , h2, h3, h4
     font-family: raleway, sans-serif
+    text-transform: uppercase
 
 h5
     font-family: poppins, sans-serif
@@ -138,6 +139,9 @@ ul.navbar-nav
     padding-top: 30px
     padding-bottom: 30px
 
+    .row
+      display: table
+
     .left
         background-image: url("/static/img/ccircle.png")
         background-repeat: no-repeat
@@ -146,15 +150,21 @@ ul.navbar-nav
         min-height: 450px
         padding-top: 40px
         padding-bottom: 40px
+        display: table-cell
+        vertical-align: middle
+        height: 600px
         
         h1
-            font-size: 130px
-            margin-top: 100px
+            font-size: 64px
             text-align: center
+
     .right
         min-height: 450px
         padding-top: 40px
         padding-bottom: 40px
+        display: table-cell
+        vertical-align: middle
+        height: 600px
 
 
 
@@ -165,8 +175,6 @@ ul.navbar-nav
     padding-bottom: 100px
     background: $fourth
 
-    h1
-        text-transform: uppercase
     .right
         text-align: center
         background-image: url("/static/img/ccircle.png")
@@ -316,7 +324,6 @@ ul.navbar-nav
   font-size: 24px
 
   h1
-    text-transform: uppercase
     margin-bottom: 40px
 
   ul li
@@ -338,6 +345,54 @@ footer
         vertical-align: middle
         display: inline
 
+/* Testimonials */
+
+.testimonials
+  h1
+    margin-top: 40px
+    margin-bottom: 40px
+
+  .author
+    font-weight: bold
+    display: block
+
+  li.media
+    font-size: 14px
+    border-bottom: 1px solid $secondary
+    padding-bottom: 20px
+    height: 150px
+    overflow: hidden
+    color: $secondary
+
+    &:last-child
+      border-bottom: none
+    
+    .media-body p
+      margin-bottom: 0px
+
+  img
+    border-radius: 30px
+    height: 60px
+
+
+/* Contact */
+
+.contact
+  background-color: $secondary
+  color: $third
+  text-align: center
+  padding: 40px
+
+  h1
+    margin-bottom: 20px
+
+  a
+    font-weight: bold
+    color: $third
+
+    &:hover
+      color: $primary
+      text-decoration: none
 
 /* Responsive */
 
