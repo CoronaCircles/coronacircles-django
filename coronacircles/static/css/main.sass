@@ -72,6 +72,9 @@ h1 , h2, h3, h4
 h5
     font-family: poppins, sans-serif
 
+a
+  color: primary
+
 a.btn
     font-family: poppins, sans-serif
     font-weight: bold
@@ -336,15 +339,6 @@ ul.navbar-nav
     bottom: 0px
     min-width: 180px
 
-footer
-    height: 50px
-    background: $secondary
-    color: $third
-    padding: 8px
-    p
-        vertical-align: middle
-        display: inline
-
 /* Testimonials */
 
 .testimonials
@@ -374,7 +368,6 @@ footer
     border-radius: 30px
     height: 60px
 
-
 /* Contact */
 
 .contact
@@ -388,6 +381,23 @@ footer
 
   a
     font-weight: bold
+    color: $third
+
+    &:hover
+      color: $primary
+      text-decoration: none
+
+footer
+  height: 50px
+  background: $secondary
+  color: $third
+  padding: 8px
+
+  p
+    vertical-align: middle
+    display: inline
+
+  a
     color: $third
 
     &:hover

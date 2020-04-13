@@ -356,7 +356,7 @@ CMS_PLACEHOLDER_CONF = {
             {
                 'plugin_type': 'TextPlugin',
                 'values': {
-                    'body':'<h1>Host a CoronaCircle</h1>',
+                    'body':'<h1>Host a Corona Circle</h1><p>Inviting to a CoronaCircle is easy</p><p>You should have good experience with talking circles such as the Corona Circles.<br />As a host your tasts are:</p><ul><li>to welcome everyone and to bring their awareness the suggestions and the procedure as they are formulated for you in the confirmation mail</li><li>mark the beginning of each round</li><li>watch the time (and start the integrated timer as soon as a person starts talking)</li></ul>',
                 },
             },
         ],
@@ -436,6 +436,15 @@ CMS_PLACEHOLDER_CONF = {
                 },
             },
         ],
+    },
+    'twitter link': {
+        'plugins': ['Bootstrap4LinkPlugin'],
+    },
+    'facebook link': {
+        'plugins': ['Bootstrap4LinkPlugin'],
+    },
+    'instagram link': {
+        'plugins': ['Bootstrap4LinkPlugin'],
     },
 }
 

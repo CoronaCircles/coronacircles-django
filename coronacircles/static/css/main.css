@@ -68,6 +68,10 @@ h5 {
   font-family: poppins, sans-serif;
 }
 
+a {
+  color: primary;
+}
+
 a.btn {
   font-family: poppins, sans-serif;
   font-weight: bold;
@@ -342,17 +346,6 @@ ul.navbar-nav li a:hover {
   min-width: 180px;
 }
 
-footer {
-  height: 50px;
-  background: #502900;
-  color: #FFFFFF;
-  padding: 8px;
-}
-footer p {
-  vertical-align: middle;
-  display: inline;
-}
-
 /* Testimonials */
 .testimonials h1 {
   margin-top: 40px;
@@ -396,6 +389,24 @@ footer p {
   color: #FFFFFF;
 }
 .contact a:hover {
+  color: #F27C00;
+  text-decoration: none;
+}
+
+footer {
+  height: 50px;
+  background: #502900;
+  color: #FFFFFF;
+  padding: 8px;
+}
+footer p {
+  vertical-align: middle;
+  display: inline;
+}
+footer a {
+  color: #FFFFFF;
+}
+footer a:hover {
   color: #F27C00;
   text-decoration: none;
 }
