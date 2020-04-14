@@ -2,6 +2,7 @@ $primary: #F27C00
 $secondary: #502900
 $third: #FFFFFF
 $fourth: #F4B93D
+$fifth: #F9DB9D
 
 
 @font-face
@@ -75,7 +76,7 @@ h5
 a
   color: primary
 
-a.btn
+.btn
     font-family: poppins, sans-serif
     font-weight: bold
     text-transform: uppercase
@@ -86,7 +87,7 @@ a.btn
         background-color: $third
         border-color: $third
 
-a.btn-primary
+.btn-primary
   background-color: $primary
   border-color: $primary
   color: $third
@@ -94,7 +95,7 @@ a.btn-primary
   &:hover
     background-color: $primary
 
-a.btn-secondary
+.btn-secondary
   background-color: $secondary
   border-color: $secondary
   color: $third
@@ -105,7 +106,7 @@ a.btn-secondary
   &:focus, &:active
     color: $primary
 
-a.btn-third
+.btn-third
   background-color: $third
   border-color: $third
   color: $third
@@ -387,22 +388,65 @@ ul.navbar-nav
       color: $primary
       text-decoration: none
 
-footer
-  height: 50px
-  background: $secondary
-  color: $third
-  padding: 8px
 
-  p
-    vertical-align: middle
-    display: inline
+/* Footer */
+
+footer
+  background: $fifth
 
   a
-    color: $third
-
+    color: $secondary
     &:hover
-      color: $primary
       text-decoration: none
+      color: $primary
+
+  & > .container
+    padding-top: 40px
+    padding-bottom: 40px
+  input#mce-EMAIL
+    border: none
+
+    &::placeholder
+      color: $secondary
+
+  .input-group
+    border: $secondary 1px solid
+  .btn
+    padding: 7px 30px
+    font-size: 15px
+    border: $secondary 1px solid
+    
+    &:hover
+      border-left: $secondary 1px solid
+
+  p
+    margin-bottom: 8px
+
+  ul.footermenu
+    list-style: none
+    padding-left: 0px
+    
+    li a
+      font-weight: bold
+      margin-bottom: 8px
+      display: inherit
+
+  .social-bar
+    height: 50px
+    background: $secondary
+    color: $third
+    padding: 8px
+
+    p
+      vertical-align: middle
+      display: inline
+
+    a
+      color: $third
+
+      &:hover
+        color: $primary
+        text-decoration: none
 
 /* Responsive */
 

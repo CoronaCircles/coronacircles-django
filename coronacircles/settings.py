@@ -190,7 +190,8 @@ INSTALLED_APPS = [
     'djangocms_video',
     'coronacircles',
     'main_app.apps.MainAppConfig',
-    'schedule'
+    'schedule',
+    'djcms_custom_menu',
 ]
 
 TEMPLATE_CONTEXT_PROCESSORS = {

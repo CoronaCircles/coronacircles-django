@@ -72,45 +72,45 @@ a {
   color: primary;
 }
 
-a.btn {
+.btn {
   font-family: poppins, sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   border-radius: 0px;
   padding: 20px 40px;
 }
-a.btn:hover {
+.btn:hover {
   background-color: #FFFFFF;
   border-color: #FFFFFF;
 }
 
-a.btn-primary {
+.btn-primary {
   background-color: #F27C00;
   border-color: #F27C00;
   color: #FFFFFF;
 }
-a.btn-primary:hover {
+.btn-primary:hover {
   background-color: #F27C00;
 }
 
-a.btn-secondary {
+.btn-secondary {
   background-color: #502900;
   border-color: #502900;
   color: #FFFFFF;
 }
-a.btn-secondary:hover {
+.btn-secondary:hover {
   color: #502900;
 }
-a.btn-secondary:focus, a.btn-secondary:active {
+.btn-secondary:focus, .btn-secondary:active {
   color: #F27C00;
 }
 
-a.btn-third {
+.btn-third {
   background-color: #FFFFFF;
   border-color: #FFFFFF;
   color: #FFFFFF;
 }
-a.btn-third:hover {
+.btn-third:hover {
   color: #FFFFFF;
 }
 
@@ -393,20 +393,64 @@ ul.navbar-nav li a:hover {
   text-decoration: none;
 }
 
+/* Footer */
 footer {
+  background: #F9DB9D;
+}
+footer a {
+  color: #502900;
+}
+footer a:hover {
+  text-decoration: none;
+  color: #F27C00;
+}
+footer > .container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+footer input#mce-EMAIL {
+  border: none;
+}
+footer input#mce-EMAIL::placeholder {
+  color: #502900;
+}
+footer .input-group {
+  border: #502900 1px solid;
+}
+footer .btn {
+  padding: 7px 30px;
+  font-size: 15px;
+  border: #502900 1px solid;
+}
+footer .btn:hover {
+  border-left: #502900 1px solid;
+}
+footer p {
+  margin-bottom: 8px;
+}
+footer ul.footermenu {
+  list-style: none;
+  padding-left: 0px;
+}
+footer ul.footermenu li a {
+  font-weight: bold;
+  margin-bottom: 8px;
+  display: inherit;
+}
+footer .social-bar {
   height: 50px;
   background: #502900;
   color: #FFFFFF;
   padding: 8px;
 }
-footer p {
+footer .social-bar p {
   vertical-align: middle;
   display: inline;
 }
-footer a {
+footer .social-bar a {
   color: #FFFFFF;
 }
-footer a:hover {
+footer .social-bar a:hover {
   color: #F27C00;
   text-decoration: none;
 }
