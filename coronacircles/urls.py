@@ -12,6 +12,8 @@ from django.views.static import serve
 
 from django.views.generic import TemplateView
 
+from main_app.forms import RegistrationForm
+
 
 
 admin.autodiscover()
@@ -25,8 +27,8 @@ urlpatterns += i18n_patterns(
     url(r'^admin/', admin.site.urls),  # NOQA
     url(r'^schedule/', include('schedule.urls')),
     url(r'^fullcalendar/', TemplateView.as_view(template_name="fullcalendar.html"), name='Fullcalendar'),
+    url(r'^api/', include('main_app.urls')),
     url(r'^', include('cms.urls')),
-    url(r'^api/', include('main_app.urls'))
 )
 
 # This is only needed when using runserver.

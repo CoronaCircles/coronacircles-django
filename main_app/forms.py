@@ -1,4 +1,5 @@
 from django import forms
 
 class RegistrationForm(forms.Form):
-    your_name = forms.CharField(label='Your name', max_length=100)
+    username = forms.CharField(label='Username', max_length=250)
+    email_address = forms.CharField(label='E-Mail-Address', max_length=250)

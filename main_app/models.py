@@ -1,15 +1,14 @@
 from django.db import models
-from datetime import datetime
+from django.utils import timezone
+import pytz
 
 class Event(models.Model):
-    creation_date = models.DateTimeField(default=datetime.now)
-    name = models.CharField(max_length=250)
+    name = models.CharField(max_length=150, unique=True)
+    creation_date = models.DateTimeField(default=timezone.now)
     event_start  = models.DateTimeField()
     participants = models.TextField()
     event_description = models.TextField()
 
+
 class User(models.Model):
-    creation_date = models.DateTimeField(default=datetime.now)
-    username = models.CharField(max_length=250)
     email_address = models.CharField(max_length=250)
-    last_participation = models.DateTimeField()
