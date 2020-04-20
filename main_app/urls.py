@@ -8,6 +8,15 @@ from . import views
 
 
 urlpatterns = [
-    url(r'host', views.hostEvent, name='host'),
-    url(r'register', views.registerUser, name='register')
+    # Circle endpoints
+    url(r'circle/host', views.hostCircle),
+    url(r'circle/delete', views.deleteCircle),
+    url(r'circle/move', views.moveCircle),
+    url(r'circle/repeat', views.repeatCircle),
+    url(r'circle/participate', views.participateCircle),
+    url(r'circle/exit', views.exitCircle),
+
+    # user endpoints
+    url(r'user/register', views.registerUser),
+    url(r'user/delete', views.deleteUser),
 ]

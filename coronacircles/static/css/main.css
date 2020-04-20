@@ -343,7 +343,6 @@ ul.navbar-nav li a:hover {
 .host a.btn {
   position: absolute;
   bottom: 0px;
-  min-width: 180px;
 }
 
 /* Testimonials */
