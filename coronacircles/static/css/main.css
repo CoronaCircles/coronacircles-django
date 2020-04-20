@@ -399,6 +399,7 @@ footer {
 }
 footer a {
   color: #502900;
+  text-transform: uppercase;
 }
 footer a:hover {
   text-decoration: none;
